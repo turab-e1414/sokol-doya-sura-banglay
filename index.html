@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Islamic Prayer Master - Full Guide</title>
+    <link rel="manifest" href="manifest.json">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=Amiri&display=swap" rel="stylesheet">
     <style>
     :root { --primary: #064e3b; --gold: #c5a059; --bg: #f3f7f5; }
@@ -345,5 +346,13 @@
     window.scrollTo({top: 150, behavior: 'smooth'});
 }
 </script>
+     <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js');
+    });
+  }
+</script>
 </body>
 </html>
+
